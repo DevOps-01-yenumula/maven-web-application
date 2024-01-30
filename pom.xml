@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Yenumula Technologies Releases Nexus Repository</name>
-	      <url>http://100.26.243.122:9980/yenumulatechnologies/repository/walmart-releases/</url>
+	      <url>http://54.144.154.99:9980/yenumulatechnologies/repository/walmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Yenumula Technologies Snapshot Nexus Repository </name>
-	      <url>http://100.26.243.122:9980/yenumulatechnologies/repository/walmart-snapshot/</url>
+	      <url>http://54.144.154.99:9980/yenumulatechnologies/repository/walmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
