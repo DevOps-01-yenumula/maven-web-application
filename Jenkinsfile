@@ -1,7 +1,5 @@
 node{
 
-    try{
-
     echo "job name is: ${env.JOB_NAME}"
     echo "node name is: ${env.NODE_NAME}"
     echo "build number is: ${env.BUILD_NUMBER}"
@@ -9,7 +7,8 @@ node{
     def mavenHome=tool name: "maven3.9.5"
     
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
-    
+
+    try{
     stage('CheckOutCode'){
         
     git branch: 'development', credentialsId: '4791225e-7032-4a7d-a804-fd2753751d13', url: 'https://github.com/DevOps-01-yenumula/maven-web-application.git'
