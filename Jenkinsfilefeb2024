@@ -54,7 +54,7 @@ node{
 
 } //node closing
 
-def slackNotifications(String buildStatus = 'STARTED') {
+def sendSlackNotifications(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESS'
   //buildStatus = buildStatus ? "SUCCESS":"FAILURE"
