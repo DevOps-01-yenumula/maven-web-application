@@ -43,6 +43,10 @@ node{
         }
         
     }
+
+stage('Trigger DownStream Job'){
+build job: 'walmart-declared'
+}
 }
 
   catch(e){
